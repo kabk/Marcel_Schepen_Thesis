@@ -2,6 +2,8 @@
 
 body {
   background-color:#ffffff;
+  width: 65%;
+  margin-left: 10%;
 
 }
 
@@ -85,3 +87,4 @@ header{
 	font-family:'Helvetica', sans-serif;
   font-weight:normal;
 }
+
