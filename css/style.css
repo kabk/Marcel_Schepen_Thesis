@@ -6,7 +6,9 @@ body {
   margin-left: 10%;
 
 }
-
+#img{
+	width: 65%;
+}
 /* TABLE OF CONTENTS */
 
 #navbar{
