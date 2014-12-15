@@ -8,18 +8,40 @@
   <meta name="keywords" content="marinus schepen, thesis, korea">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;">
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/ga.js" async="" type="text/javascript"></script>
-  <script src="js/jquery_002.js"></script>
-  <script src="js/jquery_003.js"></script>
-  <script src="js/jquery.js"></script>
+  <script src="js/jquery.2.0.0.js"></script>
   <script src="js/scrolltop.js"></script>
+  <!-- ADDED LATER -->
+  <link rel="stylesheet" href="css/jquery.sidr.css">
+  <!-- SIDR -->
+  <script src="js/jquery.sidr.min.js"></script>
 
 </head>
 
-<body style="display: block;margin-left: 0px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;" id="home">
-<section style="min-height: 698px;" class="transparent placeholder windowheight"></section>
+<body style="display: block;" id="home">
+<section style="min-height: 698px;" class="transparent placeholder windowheight">
+	<div class="pushmenu">
+	<a id="simple-menu"href="#sidr"> <img src="img/menu.png" alt="index"> </a>
+						 
+		<div id="sidr">
+		<!-- CHAPTERS -->
+		<p>INDEX</p>
+		<ul>
+			<li><a href="#" class="scrollToTop">Cover →</a></li>
+			<li><a href="#paulbaran">Paul Baran →</a></li>
+			<li><a href="#thesocialweb">The Social Web →</a></li>
+			<li><a href="#hoofdstuk">CHAPTER 2 →</a></li>
+		</ul>
+		</div>
+						 
+		<script>
+			$(document).ready(function() {
+			$('#simple-menu').sidr();
+			});
+		</script>
+	</div>	
+</section>
 
-<section style="min-height: 698px;" class="container windowheight top">
+<section style="min-height: 698px" class="container windowheight top">
 	<div class="textholder v-top">
 		<h1>This would be the thesis title<br> Can this be the question?</h1>
 	</div>
@@ -28,11 +50,11 @@
 		<h1>By Name Author</h1>
 	</div>
 </section>
-		
+	
 <section class="container article">
 
 <div class="intro">	  	  	
-<h1>Beyond distributed and decentralized:<br> What is a federated network?</h1>
+<h1 id="intro">Beyond distributed and decentralized:<br> What is a federated network?</h1>
 
 <h2>Reading academic texts on networks, it is easy to get confused by the various labels attached to the networks described in texts. One could say it all began when Paul Baran established the distinction between centralized, decentralized and distributed networks in 1964, in his paper “On Distributed Networks“. This straightforward distinction has been widely adopted by scholars, but there are a few other labels that are often used and yet have a less distinct definition.</h2><br>
 </div>
@@ -40,7 +62,7 @@
 <article>
 <div class="textwrapper">
 
-<h3><a name="paulbaran">PAUL BARAN</a></h3>
+<h3><a id="paulbaran">PAUL BARAN</a></h3>
 
 <p>Paul Baran (1926-2011) was a Polish-American engineer who invented several technologies related to network architecture. His work on centralized vs decentralized architecture, during the cold war, was inspired by the need to design a network that could withstand a nuclear attack. <a id=link href="http://en.wikipedia.org/wiki/Paul_Baran" target="_blank">(More)</a></p>
 
@@ -49,7 +71,7 @@
 <p>As mentioned before, Paul Baran in his classic 1964 text On distributed communication networks distinguishes three kinds of architectures that would be applicable to communication networks. As this text is often cited when discussing network architectures, it is a good place to start with an exploration of network architecture terminology. Baran envisions a network as an interconnected set of nodes, agents that can send and receive data. These nodes can then be organized in various ways, and this organization is what distinguishes the types of network architecture from each other.</p>
 
 
-<h3><a name="terminology">TERMINOLOGY</a></h3>
+<h3><a id="terminology">TERMINOLOGY</a></h3>
 <ul>
   <li>Network: A collection of interlinked nodes that exchange information.</li>
   <li>Node: The most basic part of the network; for example, a user or computer.</li>
@@ -58,7 +80,7 @@
 </ul>
 <p>The “traditional” network architecture is the centralized network, where all nodes send their data to one central node (a server), which then sends the data to the intended recipient. Then there’s the distributed network, where there’s no central server and each node is connected to various other nodes; data simply “hops” through whichever nodes allow for the shortest route to the recipient. Finally there’s the decentralized network, which could be characterized as a distributed network of centralized networks. When “zoomed out”, a decentralized network resembles a distributed network, but zooming in on the nodes of this distributed network reveals that the nodes in this network are in fact centralized networks, with the central node of each network connected to several other such central nodes. This way, the network does not rely on one single server, but splits the risk by having several such central nodes each manage a limited amount of “end point” nodes.</p>
 
-<h3><a name="federation">FEDERATION</a></h3>
+<h3><a id="federation">FEDERATION</a></h3>
 <p>In politics, a federation is a union of states (or other entities) that are partially self-governing and independent but have transferred a set of responsibilities and duties to a central government that unites them.
 This is comprehensible enough, but what’s a federated network, then? Alternative social networks such as Diaspora and Lorea have been described as adopting a federated structure, but their server architecture is often strongly remeniscent of Baran’s description of a decentralized system. In Diaspora, for example, users become a member of a “pod”, and in principle only connect directly with their own pod; these pods in turn are connected to each other to allow users in different pods to interact with each other. This matches the “distributed network of centralized networks” description given above quite well.</p>
 
@@ -68,7 +90,7 @@ This is comprehensible enough, but what’s a federated network, then? Alternati
 
 <p>Lonneke van der Velden, in her 2013 text Meeting the Alternatives, offers yetanother conceptualization of the relation between decentralization and federation. Writing about the alternative social networks Diaspora and Lorea, she notes that “[decentralization] means that data is not stored on the servers owned by one central actor, but on federated servers”. In this instance, decentralization and federation do seem to be more or less two ways of saying the same thing, where “federation” is a mode of server organization that makes the network of these servers decentralized.</p>
 
-<h3><a name="thesocialweb">THE SOCIAL WEB</a></h3>
+<h3><a id="thesocialweb">THE SOCIAL WEB</a></h3>
 <p>The World Wide Web Consortium (W3C)’s Social Web Incubator Groupinvestigates how, through the use of web standards (such as HTML,OpenSocial or FOAF), an interoperable set of online social technologies can be developed and sustainably maintained.</p>
 
 <p>Looking at another prominent adopter of “federated” terminology, theFederated Social Web W3C community group seems to have yet another conception of what it means for a network to be federated. According to the announcement of their Federated Social Web Summit in 2010, federation (in the context of social networks) is “letting people on different social networks follow each other”. The focus is in this case not so much on network architecture, but rather on data exchange: the FSW proposes that different networks adopt one unified data architecture so that a robust, heterogeneous network-of-networks can emerge. So for the FSW initiative, federation can be achieved through standardization of data formats: the precise connection between nodes and server is less relevant.</p>
@@ -84,13 +106,13 @@ This is comprehensible enough, but what’s a federated network, then? Alternati
 
 <!-- TEST -->
 <div class="intro">	  	  	
-<h1>Beyond distributed and decentralized:<br> What is a federated network?</h1>
+<h1><a  id="hoofdstuk">Beyond distributed and decentralized:<br> What is a federated network?</a></h1>
 </div>
 
 <article>
 <div class="textwrapper">
 
-<h3><a name="paulbaran">PAUL BARAN</a></h3>
+<h3><a id="paulbaran">PAUL BARAN</a></h3>
 
 <p>Paul Baran (1926-2011) was a Polish-American engineer who invented several technologies related to network architecture. His work on centralized vs decentralized architecture, during the cold war, was inspired by the need to design a network that could withstand a nuclear attack. <a id=link href="http://en.wikipedia.org/wiki/Paul_Baran" target="_blank">(More)</a></p>
 
@@ -99,7 +121,7 @@ This is comprehensible enough, but what’s a federated network, then? Alternati
 <p>As mentioned before, Paul Baran in his classic 1964 text On distributed communication networks distinguishes three kinds of architectures that would be applicable to communication networks. As this text is often cited when discussing network architectures, it is a good place to start with an exploration of network architecture terminology. Baran envisions a network as an interconnected set of nodes, agents that can send and receive data. These nodes can then be organized in various ways, and this organization is what distinguishes the types of network architecture from each other.</p>
 
 
-<h3><a name="terminology">TERMINOLOGY</a></h3>
+<h3><a id="terminology">TERMINOLOGY</a></h3>
 <ul>
   <li>Network: A collection of interlinked nodes that exchange information.</li>
   <li>Node: The most basic part of the network; for example, a user or computer.</li>
@@ -108,7 +130,7 @@ This is comprehensible enough, but what’s a federated network, then? Alternati
 </ul>
 <p>The “traditional” network architecture is the centralized network, where all nodes send their data to one central node (a server), which then sends the data to the intended recipient. Then there’s the distributed network, where there’s no central server and each node is connected to various other nodes; data simply “hops” through whichever nodes allow for the shortest route to the recipient. Finally there’s the decentralized network, which could be characterized as a distributed network of centralized networks. When “zoomed out”, a decentralized network resembles a distributed network, but zooming in on the nodes of this distributed network reveals that the nodes in this network are in fact centralized networks, with the central node of each network connected to several other such central nodes. This way, the network does not rely on one single server, but splits the risk by having several such central nodes each manage a limited amount of “end point” nodes.</p>
 
-<h3><a name="federation">FEDERATION</a></h3>
+<h3><a id="federation">FEDERATION</a></h3>
 <p>In politics, a federation is a union of states (or other entities) that are partially self-governing and independent but have transferred a set of responsibilities and duties to a central government that unites them.
 This is comprehensible enough, but what’s a federated network, then? Alternative social networks such as Diaspora and Lorea have been described as adopting a federated structure, but their server architecture is often strongly remeniscent of Baran’s description of a decentralized system. In Diaspora, for example, users become a member of a “pod”, and in principle only connect directly with their own pod; these pods in turn are connected to each other to allow users in different pods to interact with each other. This matches the “distributed network of centralized networks” description given above quite well.</p>
 
@@ -118,7 +140,7 @@ This is comprehensible enough, but what’s a federated network, then? Alternati
 
 <p>Lonneke van der Velden, in her 2013 text Meeting the Alternatives, offers yetanother conceptualization of the relation between decentralization and federation. Writing about the alternative social networks Diaspora and Lorea, she notes that “[decentralization] means that data is not stored on the servers owned by one central actor, but on federated servers”. In this instance, decentralization and federation do seem to be more or less two ways of saying the same thing, where “federation” is a mode of server organization that makes the network of these servers decentralized.</p>
 
-<h3><a name="thesocialweb">THE SOCIAL WEB</a></h3>
+<h3><a id="thesocialweb">THE SOCIAL WEB</a></h3>
 <p>The World Wide Web Consortium (W3C)’s Social Web Incubator Groupinvestigates how, through the use of web standards (such as HTML,OpenSocial or FOAF), an interoperable set of online social technologies can be developed and sustainably maintained.</p>
 
 <p>Looking at another prominent adopter of “federated” terminology, theFederated Social Web W3C community group seems to have yet another conception of what it means for a network to be federated. According to the announcement of their Federated Social Web Summit in 2010, federation (in the context of social networks) is “letting people on different social networks follow each other”. The focus is in this case not so much on network architecture, but rather on data exchange: the FSW proposes that different networks adopt one unified data architecture so that a robust, heterogeneous network-of-networks can emerge. So for the FSW initiative, federation can be achieved through standardization of data formats: the precise connection between nodes and server is less relevant.</p>
@@ -133,12 +155,13 @@ This is comprehensible enough, but what’s a federated network, then? Alternati
 </article>
 
 <div class="footer"><footer>
-Design and Coding by Marinus Schepen — 2014 <a href="#top" class="scrollToTop" style="float:right;">Back to top</a>
+Design and Coding by <a id=link href="http://www.marinusschepen.com" target="_blank">Marinus Schepen</a> — 2014 <a href="#" class="scrollToTop" style="float:right;">Back to top</a>
 </footer></div>
 
 <!-- /container -->
 
 	</div>
-	  </section>
+</section>
+
 </body>
 </html>
