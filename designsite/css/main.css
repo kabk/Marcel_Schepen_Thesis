@@ -10,7 +10,10 @@ header {
 
 body {
 	font-family: 'Helvetica';
-	background-color:#ffffff;}
+	background-color:#ffffff;
+	margin: 0;
+	padding: 0;
+}
 
 p{	
 	font-size: 19px;
@@ -242,6 +245,8 @@ h5 a:hover{
 .pushmenu {
 	z-index: 2;
 	position:fixed;
+	margin-left: 5px;
+	margin-top: 5px;
 }
   
 /* ---------- LIST ---------- */
