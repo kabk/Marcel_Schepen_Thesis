@@ -14,31 +14,28 @@
   <link rel="stylesheet" href="css/jquery.sidr.css">
   <!-- SIDR -->
   <script src="js/jquery.sidr.min.js"></script>
-
+  <script>
+  	$(document).ready(function() {
+  	$('#simple-menu').sidr();
+  	});
+  </script>
 </head>
-
 <body style="display: block;" id="home">
+	<div id="sidr">
+	<!-- CHAPTERS -->
+	<p>INDEX</p>
+	<ul>
+		<li><a href="#" class="scrollToTop">Cover →</a></li>
+		<li><a href="#paulbaran">Paul Baran →</a></li>
+		<li><a href="#thesocialweb">The Social Web →</a></li>
+		<li><a href="#hoofdstuk">CHAPTER 2 →</a></li>
+	</ul>
+	</div>
+  
 <section style="min-height: 698px;" class="transparent placeholder windowheight">
 	<div class="pushmenu">
-	<a id="simple-menu"href="#sidr"> <img src="img/menu.png" alt="index"> </a>
-						 
-		<div id="sidr">
-		<!-- CHAPTERS -->
-		<p>INDEX</p>
-		<ul>
-			<li><a href="#" class="scrollToTop">Cover →</a></li>
-			<li><a href="#paulbaran">Paul Baran →</a></li>
-			<li><a href="#thesocialweb">The Social Web →</a></li>
-			<li><a href="#hoofdstuk">CHAPTER 2 →</a></li>
-		</ul>
-		</div>
-						 
-		<script>
-			$(document).ready(function() {
-			$('#simple-menu').sidr();
-			});
-		</script>
-	</div>	
+	<a id="simple-menu" href="#sidr"><img src="img/menu.png" alt="index"></a>
+	</div>
 </section>
 
 <section style="min-height: 698px" class="container windowheight top">
