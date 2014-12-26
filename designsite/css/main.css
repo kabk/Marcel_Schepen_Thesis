@@ -77,7 +77,7 @@ q:before, q:after {
 \*------------------------------------*/
 
 body {
- background-color: gray;
+ background-color: #0588ce;
 }
 
 /*------------------------------------*\
@@ -90,8 +90,19 @@ body {
 	margin-right: auto;
 	width: 40%;
 	text-align: center;
-	
 }  
+
+.covericon{
+	margin-right: 27.5%;
+	margin-left: 27.5%;
+	width: 45%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+}
 
 
 /* ---------- TYPOGRAPHY ---------- */
