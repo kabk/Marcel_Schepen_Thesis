@@ -32,19 +32,28 @@
 	</ul>
 	</div>
   
-<section style="min-height: 698px;" class="transparent placeholder windowheight">
+<section class="transparent placeholder windowheight">
 	<div class="pushmenu">
-	<a id="simple-menu" href="#sidr"><img src="img/menu.png" alt="index"></a>
-	</div>
+	<a id="simple-menu" href="#sidr">
+		<div id="nav-icon3" style="margin-top: 0px; margin-bottom:0px;">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<script> 
+	$(document).ready(function(){
+	$('#nav-icon,#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+</script></a></div>
 </section>
 
-<section style="min-height: 698px" class="container windowheight top">
-	<div class="textholder v-top">
-		<h1>This would be the thesis title<br> Can this be the question?</h1>
-	</div>
-	<div class="breaker"></div>
-	<div class="textholder v-bottom">
-		<h1>By Name Author</h1>
+<section style="min-height: 100vh">
+	
+	<div class="covername">
+		<h7>By Name Author</h7>
 	</div>
 </section>
 	
