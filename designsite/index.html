@@ -26,7 +26,7 @@
 	<p>INDEX</p>
 	<ul>
 		<li><a href="#" class="scrollToTop">Cover →</a></li>
-		<li><a href="#paulbaran">Paul Baran →</a></li>
+		<li><a href="#intro">Paul Baran →</a></li>
 		<li><a href="#thesocialweb">The Social Web →</a></li>
 		<li><a href="#hoofdstuk">CHAPTER 2 →</a></li>
 	</ul>
@@ -51,21 +51,31 @@
 </section>
 
 <section class="cover" style="min-height: 100vh">
-	<div class="covericon">
-	<img src="img/logo.svg" alt="ROK ON!">
-	</div>
 	<div class="covername">
 		<h7>By Marinus Schepen</h7>
 	</div>
+    <img src="img/background.svg" class="flag" />
+    <script>
+	    	var d = document.getElementsByClassName('cover')[0];
+
+	    	function resize() {
+		    d.style.height = window.innerHeight + 'px';
+		    }
+		    resize();
+		    window.onresize = resize;
+	</script>
+    <div class="covericon">
+	<img src="img/logo.svg" alt="ROK ON!"></div>
+	
+	
 </section>
 	
-<section class="container article">
+<section class="container">
 
 <div class="intro">	  	  	
 <h1 id="intro">Beyond distributed and decentralized:<br> What is a federated network?</h1>
 
-<h2>Reading academic texts on networks, it is easy to get confused by the various labels attached to the networks described in texts. One could say it all began when Paul Baran established the distinction between centralized, decentralized and distributed networks in 1964, in his paper “On Distributed Networks“. This straightforward distinction has been widely adopted by scholars, but there are a few other labels that are often used and yet have a less distinct definition.</h2><br>
-</div>
+<h2>Reading academic texts on networks, it is easy to get confused by the various labels attached to the networks described in texts. One coul
 
 <article>
 <div class="textwrapper">

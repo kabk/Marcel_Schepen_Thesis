@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 	//Check to see if the window is top if not then display button
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 100) {
@@ -29,3 +30,11 @@ $(document).ready(function(){
 });
 	
 });
+
+var d = document.getElementsByTagName('div')[0];
+
+function resize() {
+  d.style.height = window.innerHeight + 'px';
+}
+resize();
+window.onresize = resize;
