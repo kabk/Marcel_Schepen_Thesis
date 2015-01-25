@@ -14,6 +14,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+sub{
+	color: gray;
+}
 
 p{	
 	font-size: 19px;
@@ -51,6 +54,36 @@ footer a{
 	color:grey;
 }
 
+/* FOOTNOTES */
+a:link {
+    color: gray;
+    text-decoration:none;
+     	-webkit-transition: all 0.5s ease;
+     	-moz-transition: all 0.5s ease;
+     	-ms-transition: all 0.5s ease;
+     	-o-transition: all 0.5s ease;
+     	transition: all 0.5s ease;
+}
+
+a:visited {
+    color: gray;
+    text-decoration:none;
+}
+
+a:hover {
+    color: black;
+    text-decoration:none;
+}
+
+a:active {
+    color: gray;
+    text-decoration:none;
+    }
+    
+/* sources list */ 
+h8 {
+	font-size: 11px !important;
+}   
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -124,7 +157,7 @@ body {
 
 /* ---------- TYPOGRAPHY ---------- */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7, h8 {
     margin: 0;
 }
 
@@ -415,9 +448,9 @@ img {
 }
 
 	.textwrapper {
-	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-	    -moz-column-count: 2; /* Firefox */
-	    column-count: 2;
+	    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+	    -moz-column-count: 3; /* Firefox */
+	    column-count: 3;
 		column-gap: 40px;
 	}
 
@@ -620,4 +653,36 @@ footer {
     position:absolute;
     top:-10px; bottom:-10px; 
     left:-10px; right:-10px; 
+}
+
+/* ------ SOCIAL MEDIA -----*/
+.nav3 {
+    height: auto;
+    width: auto;
+    float: left;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+.icons {
+ 	-webkit-opacity: 0.5;
+ 	-moz-opacity: 0.5;
+ 	opacity: 0.5;
+ 	-webkit-transition: all 0.4s ease;
+ 	-moz-transition: all 0.4s ease;
+ 	-ms-transition: all 0.4s ease;
+ 	-o-transition: all 0.4s ease;
+ 	transition: all 0.4s ease;
+ 		display:inline-block;
+ 		padding-right: 5px;
+ 		margin-top: 45vh;
+ 		width: 25px; 
+ 		height: 25px; 
+}
+
+.icons:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
