@@ -157,7 +157,7 @@ body {
 \*------------------------------------*/
 
 .container{
-	background-color: #FAFBFB;
+	background-color: #f8f8f8;
 }
 
 /* ---------- TYPOGRAPHY ---------- */
@@ -522,7 +522,7 @@ body {
 		page-break-after: avoid;
 		page-break-before: always;
 		color: black !important;
-		margin-bottom: 1.5cm;
+		margin-bottom: 1cm;
 		
 		}
 
