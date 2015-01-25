@@ -537,7 +537,9 @@ body {
 		line-height: 11pt !important;
 		width:50%;
 		}
-
+	sup, sub {
+		font-style: italic;
+	}
 
 .caption {
 	font-size:8pt !important;
