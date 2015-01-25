@@ -36,7 +36,7 @@
 		<li><a href="#export">4. Korean culture as an export product →</a></li>
 		<li><a href="#conclusion">5. Conclusion →</a></li>
 		<li><a href="#abstract">6. Abstract & Summary →</a></li>
-		<li><a href="#abstract">7. SOURCES →</a></li>
+		<li><a href="#sources">7. SOURCES →</a></li>
 	</ul>
 		<div class="nav3">
 			<a href="http://www.marinusschepen.com" class="icons" target="_blank"><img src="img/portfoliob.svg"></a>
@@ -106,12 +106,18 @@
 </article></div>
 
 <!-- VISUAL ESSAY -->
-<div class="visualessay">
-<h9 id="visual">VISUAL ESSAY
-	<br><br><br><br><br><br><br>
-</h9>
-</div>
 
+<!-- SCRIPTS -->
+<script>$('img').on('dragstart', function(event) { event.preventDefault(); });</script>
+		
+<!-- essay -->
+<div class="visualessay">
+<h9 id="visual">VISUAL ESSAY<br>
+	<br>
+</h9>
+<img src='img/visualessay.jpg'/>
+<h9><br><br></h9>
+</div>
 
 <!-- CHAPTER 1 -->
 <section class="container">
@@ -431,8 +437,18 @@ consulted on 27-11-2014<br>
 All rights reserved, including the right of reproduction in whole or in any part of form. <a href="#" class="scrollToTop" style="float:right;">back to top ⌅</a>
 </footer></div></div>
 
-<!-- /container -->
-
+<!-- IPAD FIX -->
+<script> 
+	// WORKAROUND: converting 90vh to px
+$element = $('.the-selector');
+function fixMobileSafariViewport() {
+  $element.css('height', window.innerHeight * 1.0);
+}
+// listen to portrait/landscape changes
+window.addEventListener('orientationchange', fixMobileSafariViewport, true);
+fixMobileSafariViewport();
+var IS_MOBILE_SAFARI_7 = !!navigator.userAgent.match(/i(Pad|Phone|Pod).+(Version\/7\.\d+ Mobile)/i);
+</script>
 	</div>
 </section>
 
